@@ -28,7 +28,7 @@ const HeaderComponent = () => {
 
     return (
         <header className="header" id="header">
-            <div className="HeaderAllStyle">
+            <div className="Header-all-style">
                 
             </div>
             {/* <div>
