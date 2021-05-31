@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
 
 const HomePage = () => {
+
+    useEffect(() => {
+        document.title = 'Главная'
+    })
+
     return (
         <React.Fragment>
             <div className="container">
