@@ -5,8 +5,8 @@ import {
     Route
 } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import HomePage from './pages/home/index'
-import HistoryPage from './pages/history/index'
+import MainPage from './pages/main/index'
+import ProfilePage from './pages/profile/index'
 import Header from './components/header/index'
 import Footer from './components/footer/index'
 const history = createBrowserHistory()
@@ -16,8 +16,8 @@ const App = () => {
         <Router history={history}>
             <Header/>
             <Switch>
-                <Route exact path='/' component={HomePage}/>
-                <Route exact path='/history' component={HistoryPage}/>
+                <Route exact path='/' component={MainPage}/>
+                <Route exact path='/profile' component={ProfilePage}/>
             </Switch>
             <Footer/>
         </Router>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 
-const HomePage = () => {
+const MainPage = () => {
 
     useEffect(() => {
         document.title = 'Главная'
@@ -17,4 +17,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default MainPage

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
-const HistoryPage = () => {
+const PofilePage = () => {
     const [counter, setCounter] = useState(0)
 
     useEffect(() => {
-        document.title = "История"
+        document.title = "Профиль"
     }, [])
 
     return (
@@ -16,4 +16,4 @@ const HistoryPage = () => {
     )
 }
 
-export default HistoryPage
+export default PofilePage
