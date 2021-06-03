@@ -1,48 +1,18 @@
 import React from 'react'
 
-// const initialState = {
-//     counter: 0,
-//     name: ''
-// }
-
-// const reducer = (state, action) => {
-//     switch(action.type) {
-//         case 'increment':
-//             return {
-//                 counter: state.counter + 1,
-//                 name: state.name + 's'
-//             }
-
-//         case 'decrement':
-//             return {
-//                 counter: state.counter - 1,
-//                 name: ''
-//             }
-//         default:
-//             return state
-//     }
-// }
-
 const HeaderComponent = () => {
-    // const [state, dispatch] = useReducer(reducer, initialState);
-
     return (
         <header className="header" id="header">
-            <div className="Header-all-style">
-                
+            <div className="container">
+                <div className="logo-container">
+                    <div className="logo-img"/>
+                    <h1 className="breand"></h1>
+                </div>
             </div>
-            {/* <div>
-                <span>{state.counter}</span>
-                <span>{state.name}</span>
-            </div>
-            <button onClick={() => dispatch({
-                type: 'increment'
-            })}>+</button>
-            <button onClick={() => dispatch({
-                type: 'decrement'
-            })}>-</button> */}
         </header>
     )
 }
 
+// background-image: url(../../../../public/logo/logo-breand.jpg);
+// style={{backgroundImage: `url(${})`}}
 export default HeaderComponent

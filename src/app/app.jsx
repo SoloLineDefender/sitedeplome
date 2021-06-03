@@ -8,7 +8,7 @@ import { createBrowserHistory } from 'history'
 import HomePage from './pages/home/index'
 import HistoryPage from './pages/history/index'
 import Header from './components/header/index'
-
+import Footer from './components/footer/index'
 const history = createBrowserHistory()
 
 const App = () => {
@@ -19,6 +19,7 @@ const App = () => {
                 <Route exact path='/' component={HomePage}/>
                 <Route exact path='/history' component={HistoryPage}/>
             </Switch>
+            <Footer/>
         </Router>
     )
 }
