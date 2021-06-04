@@ -8,6 +8,13 @@ const HeaderComponent = () => {
                     <div className="logo-img"/>
                     <h1 className="breand"></h1>
                 </div>
+                <div className="search-container">
+                    <img src='/logo/logo-breand.png' alt="" className="search-img" />
+                    <input type="text" className="search-box" />
+                </div>
+                <div className="profile-container">
+                    <a href="" className="profile"></a>
+                </div>
             </div>
         </header>
     )

@@ -4,10 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'),
 
 module.exports = {
     mode: 'development',
-    entry: path.join(__dirname, 'src', 'index.jsx'),
+    entry: path.resolve(__dirname, 'src', 'index.jsx'),
     output: {
         filename: '[name].bundle.js',
-        path: path.join(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
         publicPath: '/'
     },
     resolve: {
@@ -17,7 +17,7 @@ module.exports = {
         historyApiFallback: true,
         host: 'localhost',
         port: 3000,
-        contentBase: '/',
+        contentBase: path.resolve(__dirname, 'public'),
         hot: true,
         open: false
     },
