@@ -51,5 +51,7 @@ h1{
     }
 }
 
-@import "./src/app/components/header/header.scss";
-@import "./src/app/components/footer/footer.scss"
+@import "/src/app/components/header/header.scss";
+@import "/src/app/components/footer/footer.scss";
+@import "/src/app/pages/main/main.scss";
+@import "/src/app/components/channels-panel/channel-panel.scss";

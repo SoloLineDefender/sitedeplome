@@ -1,0 +1,27 @@
+.channels-panel {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45px;
+    height: 100%;
+    background-color: red;
+    > .channels-panel-switch {
+        position: relative;
+        background-color: black;
+        height: 45px;
+        width: 45px;
+    }
+    &.toggle { 
+        width: 90px;
+
+        > .channels-panel-switch {
+
+        }
+
+        > .channels-panel-list {
+
+        }
+    }
+}
