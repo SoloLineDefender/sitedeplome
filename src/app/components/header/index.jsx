@@ -6,11 +6,10 @@ const HeaderComponent = () => {
             <div className="container">
                 <div className="logo-container">
                     <a href="/" className="logo-img"></a>
-                    {/* <div className="logo-img"/> */}
                     <a href="/" className="breand">JUST TALK</a>
                 </div>
                 <div className="search-container">
-                    <input type="text" className="search-box" />
+                    <input type="text" spellcheck="false" className="search-box" />
                     <div className="search-img"></div>
                 </div>
                 <div className="profile-container">
