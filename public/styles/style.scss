@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
 html,
 body {
     display: block;

@@ -5,12 +5,12 @@ const ChannelsPanelSwitch = () => {
     return (
         <ChannelsPanelContext.Consumer>
             {context =>
-                <div className="channels-panel-switch" 
-                onClick={(e) => { context.setToggleState(context.isToggle ? false : true)}}>
+                <div className="channels-panel-switch">
                     {context.isToggle && 
                         <div className="text-switch">Подписки</div>
                     }
-                    <div className="button-switch">
+                    <div className="button-switch"
+                    onClick={(e) => { context.setToggleState(context.isToggle ? false : true)}}>
                     </div>
                 </div>
             }

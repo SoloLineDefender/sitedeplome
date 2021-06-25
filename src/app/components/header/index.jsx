@@ -13,13 +13,13 @@ const HeaderComponent = () => {
                     <div className="search-img"></div>
                 </div>
                 <div className="profile-container">
-                    <a href="/profile" className="profile-img"></a>
+                    <a href="/profile">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </header>
     )
 }
 
-// background-image: url(../../../../public/logo/logo-breand.jpg);
-// style={{backgroundImage: `url(${})`}}
 export default HeaderComponent

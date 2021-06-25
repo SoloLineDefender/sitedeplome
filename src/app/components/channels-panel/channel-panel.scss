@@ -10,8 +10,7 @@
     border-right: black;
     border-right-width: 2px;
     border-bottom-width: 0px;
-    transition: width .5s ease;
-    // box-shadow: 2px 0px 2px black;
+    transition: width .2s ease-out;
     > .channels-panel-switch {
         position: relative;
         display: flex;

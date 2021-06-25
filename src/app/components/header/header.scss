@@ -65,8 +65,8 @@ header {
                 border-width: 1px;
                 border-style: groove;
                 transition: transform .2s ease;
-                &:hover{
-                    background-color: rgb(219, 215, 206);
+                &:hover {
+                    background-color: rgb(235, 235, 235);
                 }
                 &:active {
                     background-color: grey;
@@ -84,25 +84,28 @@ header {
                 background: #ffffff !important;
                 font-size: 20px;
                 padding-top: 4px;
-                
-                // > :hover {
-                //     box-shadow: 0 2px 100px pink;
-                // }
+                padding-left: 10px;
             }
         }
         > .profile-container {
             flex: 0 0 auto;
             width: 50px;
             height: 50px; 
-            > .profile-img {
-                margin-top: 2px;
-                display: block;
-                background-repeat:no-repeat;
-                background-size: contain;
-                background-image: url(/public/img/profile-diffalt.png);
-                border-radius: 100%;
-                height: 45px;
-                width: 50px;
+            border-radius: 100%;
+
+            > a {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: center;
+                width: inherit;
+                height: inherit;
+            }
+
+            > a > i {
+                font-size: 32px;
+                text-decoration: none;
+                color: black;
             }
         }
     }
