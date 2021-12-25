@@ -16,14 +16,13 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         host: 'localhost',
-        port: 3000,
+        port: 4000,
         contentBase: path.resolve(__dirname, 'public'),
         hot: true,
         open: false
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.jsx$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
