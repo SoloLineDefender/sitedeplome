@@ -16,7 +16,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         host: 'localhost',
-        port: 4000,
+        port: 1534,
         contentBase: path.resolve(__dirname, 'public'),
         hot: true,
         open: false
