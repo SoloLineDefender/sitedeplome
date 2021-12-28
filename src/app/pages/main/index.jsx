@@ -8,7 +8,7 @@ const MainPage = () => {
 
     return (
         <React.Fragment>
-
+            
         </React.Fragment>
     )
 }
