@@ -5,12 +5,17 @@
     justify-content: flex-start;
     justify-items: center;
     background: aqua;
-    margin: 10%;
+    margin: 10vh;
     width: 80%;
     height: 80%;
     .text {
         margin-top: 20%;
         justify-self: center;
         height: 30px;
+    }
+    .textSome {
+        margin-top: 20%;
+        justify-content: center;
+        font: bold 24px;
     }
 }
