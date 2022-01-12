@@ -6,8 +6,6 @@ const MainPage = () => {
         document.title = 'Главная'
         
     })
-    
-    var main = document.getElementById("renderer")
     var hi = window.innerHeight
     var wi = window.innerWidth
     var a = {hi,wi}
@@ -16,12 +14,16 @@ const MainPage = () => {
 
     function test (){
         let a = document.getElementById("WriteText")
-        let b = document.getElementById("")
+        let b = document.getElementById("textSomeOne")
+        let v = document.createTextNode("")
+        function Changetext (){
+            b.innerText = a.value
+        }
         return (
-            console.log(a.value)
+            Changetext()
         )
         
-    };
+    }
 
     function test2(){
         {setInterval(() => {
@@ -32,10 +34,13 @@ const MainPage = () => {
 
     
     function test3(){
-        var a = document.getElementById("textSomeOne")
-        setInterval(() => {
-            return(console.log(a))            
-        }, 3000);
+        let k = document.getElementById("textSomeOne")
+        function Consoletest () {
+                console.log(k)            
+        }
+        return(
+            Consoletest()
+            )            
         // if (onchange = true) {
         //     let textInput = document.getElementById("WriteText")
         //     let porag = document.getElementById("textSome")
@@ -48,12 +53,12 @@ const MainPage = () => {
         <React.Fragment>
             
             <div className="mainWindow" id="MainWindow" name="mainWindow">
-                <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
-                <p className="textSome" id="textSomeOne">111</p>
+                <input type="text" id="WriteText" className="text" name="text" onChange={test} onFocus={test3}/>
+                <p className="textSome" id="textSomeOne" name="123"></p>
+                
             </div>
             
-            {/* {test2()}
-            {test3()} */}
+            {/* {test2()} */}
         </React.Fragment>
     )
 
