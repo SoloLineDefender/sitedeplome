@@ -53,7 +53,7 @@ const MainPage = () => {
         <React.Fragment>
             
             <div className="mainWindow" id="MainWindow" name="mainWindow">
-                <input type="text" id="WriteText" className="text" name="text" onChange={test} onFocus={test3}/>
+                <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
                 <p className="textSome" id="textSomeOne" name="123"></p>
                 
             </div>
