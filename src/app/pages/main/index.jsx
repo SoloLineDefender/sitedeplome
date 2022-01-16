@@ -30,7 +30,9 @@ const MainPage = () => {
             test()
         }, 3000)}
     }
-
+    class start {
+        
+    } 
 
     
     function test3(){
@@ -48,16 +50,41 @@ const MainPage = () => {
         //     }
             
     }
+
+    class CreateBlock {
+        
+    }
+    
+    function test4 (){
+        let somenumber = 1
+        let ViewBox = document.getElementById("ViewBox")
+        let BlockCreate = document.createElement("div")
+        let TextFromInputBox = document.getElementById("WriteText")
+        BlockCreate.id = "BlockView"
+        BlockCreate.className = "BlockView"
+        BlockCreate.innerText = TextFromInputBox.value
+        ViewBox.append(BlockCreate)
+        console.dir(BlockView)
+        
+    }
+    
+
+
+    function test5 (){
+        l
+    }
     
     return (
         <React.Fragment>
             
             <div className="mainWindow" id="MainWindow" name="mainWindow">
+                <div className="inputBox">
                 <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
-                <p className="textSome" id="textSomeOne" name="123"></p>
-                
+                <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>
+                </div>
+                <p className="textSome" id="textSomeOne" name="123" ></p>
+                <div className="viewBox" id="ViewBox" name="ViewBox"></div>
             </div>
-            
             {/* {test2()} */}
         </React.Fragment>
     )
