@@ -9,10 +9,13 @@
     margin: 10vh;
     width: 80%;
     height: 80%;
-    .inputBox{
+    border-radius: 2%;
+    .inputBox {
+        padding: 5px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        justify-content: center;
         .text {
             margin-top: 20%;
             justify-self: center;
@@ -23,11 +26,12 @@
             min-height: 30px;
             max-height: 50%;
             width: 100px;
-            
+            border-radius: 10px;
         }
     }
-   
     .textSome {
+        margin-left: 5px;
+        padding: 2px;
         overflow-wrap: break-word;
         margin-top: 20%;
         justify-content: center;
@@ -36,26 +40,33 @@
         max-width: 100px;
         min-width: 30px;
         width: 30%;
+        overflow: hidden;
     }
     .viewBox {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex: wrap row;
         margin: 10px;
+        padding: 4px;
         width: 70%;
         background-color: darkgray;
         justify-content: flex-start;
+        align-content: flex-start;
         justify-self: flex-end;
+        border-radius: 3%;
         .BlockView {
             background-color: black;
             margin: 5px;
             min-width: 30px;
             max-width: 100px;
-            height: 30px;
+            min-height: 30px;
+            max-height: 70px;
+            border-radius: 12%;
             color: white;
             font-size: 24px;
             font-weight: bold;
+            overflow-wrap: break-word;
+            overflow: hidden;
         }
     }
 }

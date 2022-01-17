@@ -52,7 +52,6 @@ const MainPage = () => {
     }
 
     class CreateBlock {
-        
     }
     
     function test4 (){
@@ -64,23 +63,31 @@ const MainPage = () => {
         BlockCreate.className = "BlockView"
         BlockCreate.innerText = TextFromInputBox.value
         ViewBox.append(BlockCreate)
-        console.dir(BlockView)
         
+    }
+
+    function test5 (){
+        if (value === BlockViewValue){
+            
+        }
     }
     
 
 
-    function test5 (){
-        l
+    function CheckName (){
+        let ViewArrow = document.getElementById("ViewBox")
+        
+        console.log(ViewArrow.childNodes[0])
     }
     
     return (
         <React.Fragment>
-            
             <div className="mainWindow" id="MainWindow" name="mainWindow">
                 <div className="inputBox">
                 <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
                 <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>
+                <button className="enter" id="enter" onClick={test5}>Удалить элемент с таким названием</button>
+                <button className="enter" id="enter" onClick={CheckName}>test console</button>
                 </div>
                 <p className="textSome" id="textSomeOne" name="123" ></p>
                 <div className="viewBox" id="ViewBox" name="ViewBox"></div>
