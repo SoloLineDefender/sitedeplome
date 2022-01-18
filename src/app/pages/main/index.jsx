@@ -74,8 +74,13 @@ const MainPage = () => {
             if(WritenText.value == ThisElement.innerText){
                 ThisElement.remove()
             }
-            else
-            {}
+            else if(WritenText.value != ThisElement.innerText){
+                console.log("!")
+            }
+         }
+        {
+            // let TextSomeOne = document.getElementById("textSomeOne")
+            // TextSomeOne.innerHTML = "Такого элемента нет"
         }
     }
     

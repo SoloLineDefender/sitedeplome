@@ -67,6 +67,13 @@
             font-weight: bold;
             overflow-wrap: break-word;
             overflow: hidden;
+            :hover {
+                background-color: blue;
+                min-width: 50px;
+                max-width: 120px;
+                min-height: 50px;
+                max-height: 90px;
+            }
         }
     }
 }
