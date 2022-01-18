@@ -63,12 +63,19 @@ const MainPage = () => {
         BlockCreate.className = "BlockView"
         BlockCreate.innerText = TextFromInputBox.value
         ViewBox.append(BlockCreate)
-        
     }
 
     function test5 (){
-        if (value === BlockViewValue){
-            
+        let ViewArrow = document.getElementById("ViewBox")
+        let WritenText = document.getElementById("WriteText")
+        let k = 0
+        for (;k<ViewArrow.childNodes.length;k++) {
+            let ThisElement = ViewArrow.children[k]
+            if(WritenText.value == ThisElement.innerText){
+                ThisElement.remove()
+            }
+            else
+            {}
         }
     }
     
@@ -76,8 +83,19 @@ const MainPage = () => {
 
     function CheckName (){
         let ViewArrow = document.getElementById("ViewBox")
+        let WritenText = document.getElementById("WriteText")
+        let TextSomeOne = document.getElementById("textSomeOne")
+        let k = 0
+        for (;k<ViewArrow.childNodes.length;k++) {
+            
+            let TimerProperty = ViewArrow.children[k]
+            if(WritenText.value == TimerProperty.innerText){
+                TimerProperty.remove()
+                console.log(TimerProperty)
+            }
+        }
+
         
-        console.log(ViewArrow.childNodes[0])
     }
     
     return (
