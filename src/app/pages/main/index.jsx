@@ -91,12 +91,14 @@ const MainPage = () => {
         let WritenText = document.getElementById("WriteText")
         let TextSomeOne = document.getElementById("textSomeOne")
         let k = 0
+        let f = ViewArrow.childNodes.length
         for (;k<ViewArrow.childNodes.length;k++) {
-            
+            f--
             let TimerProperty = ViewArrow.children[k]
             if(WritenText.value == TimerProperty.innerText){
                 TimerProperty.remove()
-                console.log(TimerProperty)
+            } else if (f<=0) {
+                TextSomeOne.innerHTML = "Такого Элемента нет"
             }
         }
 
@@ -107,7 +109,7 @@ const MainPage = () => {
         <React.Fragment>
             <div className="mainWindow" id="MainWindow" name="mainWindow">
                 <div className="inputBox">
-                <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
+                <input type="text" id="WriteText" className="text" name="text" onChange={test} onSubmit={CheckName}/>
                 <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>
                 <button className="enter" id="enter" onClick={test5}>Удалить элемент с таким названием</button>
                 <button className="enter" id="enter" onClick={CheckName}>test console</button>
