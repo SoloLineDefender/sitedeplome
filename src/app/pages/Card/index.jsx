@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const PofilePage = () => {
+const Card = () => {
     const [counter, setCounter] = useState(0)
 
     useEffect(() => {
@@ -9,11 +9,11 @@ const PofilePage = () => {
 
     return (
         <React.Fragment>
-            <div className="container">
-                <h1>123</h1>
-            </div>
+            <div className="mainWindow2" id="MainWindow2">
+
+            </div>  
         </React.Fragment>
     )
 }
 
-export default PofilePage
+export default Card
