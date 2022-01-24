@@ -69,52 +69,48 @@ const MainPage = () => {
         let ViewArrow = document.getElementById("ViewBox")
         let WritenText = document.getElementById("WriteText")
         let k = 0
+        let f = ViewArrow.childNodes.length
         for (;k<ViewArrow.childNodes.length;k++) {
+            f--
             let ThisElement = ViewArrow.children[k]
             if(WritenText.value == ThisElement.innerText){
                 ThisElement.remove()
             }
-            else if(WritenText.value != ThisElement.innerText){
-                console.log("!")
+            else if (f<=0) {
+                TextSomeOne.innerHTML = "Такого Элемента нет"
             }
          }
-        {
-            // let TextSomeOne = document.getElementById("textSomeOne")
-            // TextSomeOne.innerHTML = "Такого элемента нет"
-        }
     }
     
 
 
-    function CheckName (){
-        let ViewArrow = document.getElementById("ViewBox")
-        let WritenText = document.getElementById("WriteText")
-        let TextSomeOne = document.getElementById("textSomeOne")
-        let k = 0
-        let f = ViewArrow.childNodes.length
-        for (;k<ViewArrow.childNodes.length;k++) {
-            f--
-            let TimerProperty = ViewArrow.children[k]
-            if(WritenText.value == TimerProperty.innerText){
-                TimerProperty.remove()
-            } else if (f<=0) {
-                TextSomeOne.innerHTML = "Такого Элемента нет"
-            }
-        }
-
-        
+    function Check (){
+        let d = document.getElementById("SVG")
+        console.dir(d)
+        let s = document.getElementById("WriteText")
+        let f = d.firstElementChild
+        console.dir(f.attributes[0])
+        f.attributes[0].value = s.value
+        f.attributes[3].value = s.value
+        //Попытаться провести кводрат линиями
     }
     
     return (
         <React.Fragment>
             <div className="mainWindow" id="MainWindow" name="mainWindow">
                 <div className="inputBox">
-                <input type="text" id="WriteText" className="text" name="text" onChange={test} onSubmit={CheckName}/>
-                <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>
-                <button className="enter" id="enter" onClick={test5}>Удалить элемент с таким названием</button>
-                <button className="enter" id="enter" onClick={CheckName}>test console</button>
+                    <input type="text" id="WriteText" className="text" name="text" onChange={test} onSubmit={Check}/>
+                    <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>
+                    <button className="enter" id="enter" onClick={test5}>Удалить элемент с таким названием</button>
+                    <button className="enter" id="enter" onClick={test4}>Поменять цвет квадрата</button>
+                    <button className="enter" id="enter" onClick={Check}>test console</button>
                 </div>
-                <p className="textSome" id="textSomeOne" name="123" ></p>
+                <svg className="svg" id="SVG" height="200px" width="200px">
+                    <path stroke="red" strokeWidth="3" d="M20,20 L20,100 100,100 100,20 z" fill="blue"/>
+                </svg>
+                <div className="textSome" id="textSomeOne" name="123" >
+                    
+                </div>
                 <div className="viewBox" id="ViewBox" name="ViewBox"></div>
             </div>
             {/* {test2()} */}
