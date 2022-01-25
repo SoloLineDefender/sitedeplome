@@ -12,7 +12,7 @@ const MainPage = () => {
 
     
 
-    function test (){
+    const test = () => {
         let a = document.getElementById("WriteText")
         let b = document.getElementById("textSomeOne")
         let v = document.createTextNode("")
@@ -25,7 +25,7 @@ const MainPage = () => {
         
     }
 
-    function test2(){
+    const test2 = () => {
         {setInterval(() => {
             test()
         }, 3000)}
@@ -84,7 +84,7 @@ const MainPage = () => {
     
 
 
-    function Check (){
+    function test6 (){
         let d = document.getElementById("SVG")
         console.dir(d)
         let s = document.getElementById("WriteText")
@@ -94,16 +94,27 @@ const MainPage = () => {
         f.attributes[3].value = s.value
         //Попытаться провести кводрат линиями
     }
+
+    const myref = React.createRef()
+    const test7 = () => {
+        let a = document.getElementById("WriteText2")
+        myref.a.value = 1234
+    }
+
+    const test8 = () => {
+
+    }
     
     return (
-        <React.Fragment>
+        <>
             <div className="mainWindow" id="MainWindow" name="mainWindow">
                 <div className="inputBox">
-                    <input type="text" id="WriteText" className="text" name="text" onChange={test} onSubmit={Check}/>
+                    <input type="text" id="WriteText2" className="text2" name="text2" ref={myref}/>
+                    <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
                     <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>
                     <button className="enter" id="enter" onClick={test5}>Удалить элемент с таким названием</button>
                     <button className="enter" id="enter" onClick={test4}>Поменять цвет квадрата</button>
-                    <button className="enter" id="enter" onClick={Check}>test console</button>
+                    <button className="enter" id="enter" onClick={test7}>test console</button>
                 </div>
                 <svg className="svg" id="SVG" height="200px" width="200px">
                     <path stroke="red" strokeWidth="3" d="M20,20 L20,100 100,100 100,20 z" fill="blue"/>
@@ -114,7 +125,7 @@ const MainPage = () => {
                 <div className="viewBox" id="ViewBox" name="ViewBox"></div>
             </div>
             {/* {test2()} */}
-        </React.Fragment>
+        </>
     )
 
 
