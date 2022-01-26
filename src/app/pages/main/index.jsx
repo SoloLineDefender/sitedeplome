@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const MainPage = () => {
 
@@ -68,11 +69,13 @@ const MainPage = () => {
     function test5 (){
         let ViewArrow = document.getElementById("ViewBox")
         let WritenText = document.getElementById("WriteText")
+        let TextSomeOne = document.getElementById("textSomeOne")
         let k = 0
         let f = ViewArrow.childNodes.length
         for (;k<ViewArrow.childNodes.length;k++) {
             f--
             let ThisElement = ViewArrow.children[k]
+            debugger
             if(WritenText.value == ThisElement.innerText){
                 ThisElement.remove()
             }
@@ -98,17 +101,18 @@ const MainPage = () => {
     const myref = React.createRef()
     const test7 = () => {
         let a = document.getElementById("WriteText2")
-        myref.a.value = 1234
+        myref.current.value = 1234
     }
 
     const test8 = () => {
-
+        
     }
     
     return (
         <>
             <div className="mainWindow" id="MainWindow" name="mainWindow">
                 <div className="inputBox">
+                    <NavLink to='/Card' className="LinkWord">Card</NavLink>
                     <input type="text" id="WriteText2" className="text2" name="text2" ref={myref}/>
                     <input type="text" id="WriteText" className="text" name="text" onChange={test}/>
                     <button className="enter" id="enter" onClick={test4}>Создать элемент с таким названием</button>

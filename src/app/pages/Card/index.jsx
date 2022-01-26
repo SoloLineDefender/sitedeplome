@@ -4,15 +4,15 @@ const Card = () => {
     const [counter, setCounter] = useState(0)
 
     useEffect(() => {
-        document.title = "Профиль"
+        document.title = "CARD"
     }, [])
 
     return (
-        <React.Fragment>
-            <div className="mainWindow2" id="MainWindow2">
-
+        <>
+            <div className="CardWindow" id="CardWindow">
+            
             </div>  
-        </React.Fragment>
+        </>
     )
 }
 
