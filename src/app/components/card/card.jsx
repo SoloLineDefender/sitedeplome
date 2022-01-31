@@ -1,9 +1,10 @@
 import React from "react";
 
-const Card = () => {
+const TheGame = () => {
     return(
-        <React.Fragment>
-             
-        </React.Fragment>
+        <>
+             <div></div>
+        </>
     )
 }
+export default TheGame
