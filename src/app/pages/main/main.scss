@@ -72,12 +72,14 @@
             font-weight: bold;
             overflow-wrap: break-word;
             overflow: hidden;
-             :hover {
-                background-color: blue;
-                min-width: 50px;
-                max-width: 120px;
-                min-height: 50px;
-                max-height: 90px;
+            transition: transform .5s ease-in-out, width .1s ease-in-out .2s, background-color .2s ease-in-out .2s, height .1s ease-in-out .2s;
+            transform-origin: 50%;
+            cursor: default;
+            &:hover {
+                background-color: burlywood;
+                min-width: 30px;
+                min-height: 30px;
+                transform: rotateZ(180deg) scale(1%)
             }
         }
     }

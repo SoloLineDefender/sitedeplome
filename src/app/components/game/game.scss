@@ -1,0 +1,16 @@
+.CardBlockNoHover {
+    background-color: brown;
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 154px;
+    transition: .1s ease-in-out 0.1s;
+    transition: transform .5s ease-in-out 1s, width .1s ease-in-out .2s, background-color .2s ease-in-out .2s, height .1s ease-in-out .2s;
+    transform-origin: 0;
+    &:hover {
+        background-color: burlywood;
+        width: 80px;
+        height: 170px;
+        transform: rotateZ(180deg) scale(1%)
+    }
+}

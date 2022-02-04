@@ -1,9 +1,14 @@
 import React from "react";
 
 const TheGame = () => {
+
+
+
+
+
     return(
         <>
-             <div></div>
+             <div id="CardBlock" className="CardBlockNoHover" ></div>
         </>
     )
 }

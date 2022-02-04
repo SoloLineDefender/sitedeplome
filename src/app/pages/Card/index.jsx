@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import TheGame from '../../components/card/card'
+import TheGame from '../../components/game/game'
 
 const Card = () => {
     

@@ -75,7 +75,6 @@ const MainPage = () => {
         for (;k<ViewArrow.childNodes.length;k++) {
             f--
             let ThisElement = ViewArrow.children[k]
-            debugger
             if(WritenText.value == ThisElement.innerText){
                 ThisElement.remove()
             }
